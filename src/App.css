@@ -1,8 +1,8 @@
-.App{
-text-align: center;
+.App {
+  text-align: center;
 }
 
-.header{
+.header {
   height: 10vh;
   display: flex;
   justify-content: space-evenly;
@@ -12,12 +12,21 @@ text-align: center;
   margin-bottom: 30px;
 }
 
-.cardsContainer{
+.cardsContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
-.active{
+.active {
   color: red;
+}
+.by-name-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-country {
+  text-decoration: none;
+  color: black;
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { NavLink } from "react-router-dom";
 import CountryCard from "../CountryCard";
 
 export default function AllCountries() {
@@ -15,9 +16,7 @@ export default function AllCountries() {
   return (
     <div className="cardsContainer">
       {countries.map((country, i) => (
-        <div>
-          <CountryCard country={country} key={i} />
-        </div>
+        <CountryCard country={country} key={i} />
       ))}
 
       {/* show the countries you received from fetch and saved in the local state (use CountryCard component to display each individual one) */}

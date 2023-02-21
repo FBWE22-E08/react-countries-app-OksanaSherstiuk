@@ -5,6 +5,7 @@ import ByRegion from "./components/views/ByRegion";
 import ByName from "./components/views/ByName";
 import Header from "./components/Header";
 import NotFound from "./components/NotFound";
+import OneCountry from "./components/views/OneCountry";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/" element={<AllCountries />} />
         <Route path="/by-name" element={<ByName />} />
         <Route path="/by-region" element={<ByRegion />} />
+        <Route path="/country/:code" element={<OneCountry />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </div>

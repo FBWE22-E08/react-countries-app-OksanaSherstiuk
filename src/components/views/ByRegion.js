@@ -57,8 +57,8 @@ export default function ByRegion() {
 
       <div className="cardsContainer">
         {countries.map((country, i) => (
-          <div>
-            <CountryCard country={country} key={i} />
+          <div key={i}>
+            <CountryCard country={country} />
           </div>
         ))}
         {/* show the countries you received from fetch and saved in the local state (use CountryCard component to display each individual one) */}
